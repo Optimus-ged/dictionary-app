@@ -1,6 +1,5 @@
 package com.kysoftdictionary.dictionaryapp
 
-import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -14,6 +13,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
@@ -83,7 +83,8 @@ class MainActivity : ComponentActivity() {
                                 modifier = Modifier.fillMaxWidth(),
                                 placeholder = {
                                     Text(text = "Search...")
-                                }
+                                },
+                                shape = RoundedCornerShape(8.dp)
                             )
                             Spacer(modifier = Modifier.height(16.dp))
                             LazyColumn (
