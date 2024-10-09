@@ -53,18 +53,6 @@ android {
 }
 
 dependencies {
-
-    // Compose dependencies
-    implementation (libs.androidx.lifecycle.viewmodel.compose)
-
-    // Coroutines
-    implementation (libs.kotlinx.coroutines.core)
-    implementation (libs.kotlinx.coroutines.android)
-
-
-    // Coroutine Lifecycle Scopes
-    implementation (libs.androidx.lifecycle.viewmodel.ktx)
-
     // Dagger - Hilt
     implementation (libs.hilt.android)
     ksp (libs.hilt.compiler)
@@ -79,10 +67,7 @@ dependencies {
     // Room
     implementation (libs.androidx.room.runtime)
     ksp (libs.androidx.room.compiler)
-
-    // Kotlin Extensions and Coroutines support for Room
     implementation (libs.androidx.room.ktx)
-
 
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
